@@ -13,6 +13,6 @@ class SecretsController < ApplicationController
   end
 
   def require_login
-    return head(:forbidden) unless session.include? :user_id
+    return head(:forbidden) unless session[:user_id] == current_user.id
   end
 end
