@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
   post 'sessions/create'
   post 'secrets/show'
+  post 'sessions/destroy'
 
   root 'application#hello'
 
