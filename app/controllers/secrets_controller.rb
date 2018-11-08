@@ -5,14 +5,6 @@ class SecretsController < ApplicationController
   end
 
   def show
-
   end
 
-  def current_user
-
-  end
-
-  def require_login
-    return head(:forbidden) unless session[:name] == current_user.name
-  end
 end
