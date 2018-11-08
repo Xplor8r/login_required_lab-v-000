@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'secrets/new'
 
+  get 'secrets/show'
+
   root 'application#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
