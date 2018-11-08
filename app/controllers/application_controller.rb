@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
 
 
   def require_login
-    redirect_to 'session', action: 'new' unless session[:name] == current_user
+    if !current_user
+      redirect_to controller: 'sessions', action: 'new'
+    end
   end
 end
