@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'secrets/new'
 
-  get 'secrets/show'
+  post 'secrets/show'
 
   root 'application#index'
 
