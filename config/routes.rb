@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'secrets/new'
-  get 'application#new'
+  get 'application/new'
   post 'secrets/show'
 
   root 'application#hello'
